@@ -1,0 +1,560 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #F3F3F3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Loại bỏ cuộn ngang */
+}
+/*-------------------header top---------------------*/
+
+.header .header-top {
+    height: 48px;
+    text-align: center;
+    background-color: #FFC602;
+}
+.header .header-between {
+    height: 50px;
+    background-color: #FFD400;
+}
+.header .header-between .iconlogo img{
+    margin-left: 70px;
+}
+.header .header-between {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box {
+    margin-left: 7px;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    width: 315px; 
+    position: relative; 
+}
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%; 
+}
+.header-between .lemon {
+    background-color: rgba(255, 172, 10, .6);
+    padding-left: 9px;
+    padding-top: 3px;
+    width: 95px;    
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.header-between .lemon1 {
+    background-color: rgba(255, 172, 10, .6);
+    margin-left: 10px;
+    padding: 11px;
+    border-radius: 6px ;
+}
+.header-between .lemon2 {
+    width: 100px;
+    padding-left: 11px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-right: 0.5px solid #e9f2ffb9;
+}
+.header-between .lemon3 {
+    line-height: 40px;
+    padding-left: 11px;
+    padding-right: 5px;
+    border-right: 0.5px solid #e9f2ffb9;
+}
+.header-between .lemon4 {
+    line-height: 40px;
+    padding-left: 11px;
+}
+.header-menu{
+    display: flex;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0 16px;
+}
+/* tbody */
+#tbody{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+#tbody .content-chuyentrang{
+    padding: 10px 4px;
+}
+
+.content-chuyentrang a{
+    text-decoration: none;
+    color: #288ad6;
+    font-size: 15px;
+}
+
+.content-chuyentrang p{
+    float: right;
+    font-size: 15px;
+}
+
+.content-chuyentrang i{
+    padding-right: 6px;
+}
+
+.content-infomation-customer{
+    background-color: #fff;
+    padding: 0 30px;
+    box-shadow: 0 0 20px rgba(179, 179, 179, 0.5);
+}
+
+.info-cus-image{
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 5px 126px 0px;
+}
+
+.info-cus-image img{
+    width: 75px;
+    margin: auto;
+}
+
+.info-cus-image button{
+    margin: 10px ;
+    border: none;
+    background-color: #fff;
+    color: rgb(181, 181, 181);
+    cursor: pointer;
+}
+
+.info-cus-image i{
+    padding-right: 5px;
+}
+
+.info-content-phone{
+    padding-top: 30px;
+}
+.info-phone-name{
+    display: inline-block;
+    font-size: 14px;
+    max-width: 311px;
+    width: 70%;
+}
+.info-phone-name a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    width: 100%;
+    max-width: 311px;
+}
+
+.info-content-phone .phone-money{
+    float: right;
+    font-size: 14px;
+    color: red;
+}
+
+.info-content-phone strong{
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 6px;
+}
+
+.info-content-phone .khuyenmai1{
+    display: inline-block;
+    margin-right: 5px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.info-content-phone .khuyenmai1-1 , .khuyenmai1-1 input{
+    font-size: 13px;
+    color: #666;
+    cursor: pointer;
+}
+
+.content-dot p{
+    font-size: 12px;
+    color: #666;
+}
+
+.content-dot i{
+    padding:6px;
+    font-size: 5px;
+    vertical-align: middle;
+}
+
+.content-dot a{
+    text-decoration: none;
+    color: #288ad6;
+}
+
+.info-content-thugon{
+    color: #288ad6;
+    font-size: 12px;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.info-ct-giamgia{
+    font-size: 14px;
+    background-color: #fff3c2;
+    padding: 8px 10px;
+    margin: 5px 0 5px 90px;
+    color: red;
+}
+
+.info-cotent-color-sl{
+    display: flex;
+    padding-top: 10px;
+}
+
+.info-ct-color a {
+    display: none;
+    text-decoration: none;
+    color: #288ad6;
+    font-size: 12px;
+    float: right;
+}
+
+
+.info-ct-sl #soluong{
+    width: 30px;
+    height: 30px;
+}
+.info-ct-sl{
+    margin-left: auto;
+}
+
+.info-ct-sl button{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.info-content-tamtinh{
+    font-size: 14px;
+    margin: 17px 0 10px 0;
+    
+}
+
+.info-content-tamtinh .info-content-tamtinh__money{
+    float: right;
+}
+.content-infomation-customer hr{
+    border: 1px solid #d1d1d1;
+}
+
+.info-customer-address{
+    margin: 10px 0;
+}
+
+.info-customer-address p{
+    margin: 4px 0;
+}
+
+.info-customer-address .info-gioitinh{
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.info-gioitinh input{
+    margin-right: 3px;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.info-customer-textbox{
+    display: flex;
+    max-width: 600px;
+    padding: 12px 0 10px;
+}
+
+.info-customer-name input{
+    padding: 10px;
+    width: 100%;
+    max-width: 264px;
+    margin-right: 90px;
+    border-radius: 4px;
+    border: 1px solid #bebebe;
+    height: 40px;
+}
+
+.info-address__nhanhang{
+    margin-right: 18px;
+    font-size: 14px;
+}
+.info-address__nhanhang input{
+    margin-right: 4px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+}
+
+.cus-address__cty{
+    display: none;
+    background-color: #f6f6f6;
+    padding: 10px 10px;
+    border: 1px solid #e1e1e1;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.cus-address{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+.address-cus1 button, .address-cus1 input{
+    display: block;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    width: 100%;
+    background: #fff;
+    text-align: left;
+    color: #288ad6;
+    position: relative;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.address-cus1 i{
+    float: right;
+}
+
+.info-yeucau input{
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #cbcbcb;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.call-phone__1{
+    margin-bottom: 15px;
+}
+.info-custom-checkbox #call-phone{
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.info-custom-KH {
+    background-color: #f6f6f6;
+    border: 1px solid #288ad6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.info-cusCK-name input{
+    padding: 10px;
+    width: 100%;
+    max-width: 255px;
+    margin-right: 100px;
+    border-radius: 4px;
+    border: 1px solid #bebebe;
+    height: 40px;
+}
+
+.custom-KH-gioitinh input{
+    margin-right: 5px;
+    vertical-align: middle;
+    cursor: pointer;
+    height: 14px;
+    width: 14px;
+}
+
+.info-custom-KH1{
+    display: none;
+    background-color: #f6f6f6;
+    border: 1px solid #288ad6;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.custom-KH-gioitinh{
+    padding-right: 10px;
+}
+
+.info-custom-checkbox #Cdanhba{
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.info-custom-checkbox #Xhoadon{
+    height: 15px;
+    width: 15px;
+    margin-right: 8px;
+    vertical-align: middle;
+    font-size: 14px;  
+    cursor: pointer; 
+}
+
+.info-hoadon-cus{
+    display: none;
+    background-color: #f6f6f6;
+    border: 1px solid #288ad6;
+    padding: 10px;
+    margin: 10px 0 15px 0;
+    border-radius: 4px;
+}
+
+.info-hoadon-cus1{
+    overflow: hidden;
+    margin-right: 5px;
+}
+
+.info-hoadon-cus input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border: 1px solid #d1d1d1;
+}
+
+.info-custom-footer{
+    margin-top: 10px;
+}
+
+.if-cus-giamgia{
+    display: inline-block;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    padding: 6px 0 6px 0;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.info-custom-maGiamGia{
+    margin-top: 10px;
+}
+
+.info-custom-maGiamGia i{
+    margin: 0 10px 0 10px;
+}
+
+.info-input-magiamgia{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 10px 0 5px 0;
+}
+
+.info-input-magiamgia input{
+    padding: 10px;
+    border-width: 1px 0 1px 1px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #e0e0e0;
+}
+.info-input-magiamgia button{
+    padding: 10px 20px;
+    background-color: #2377e8;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #2377e8;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+.info-cus-price{
+    margin-bottom: 20px;
+}
+
+.info-cus-price .price1{
+    float: right;
+    color: #f30c28;
+}
+
+.info-cus-price strong{
+    font-size: 14px;
+}
+
+.info-cus-poin .poin1{
+    float: right;
+}
+
+.info-cus-poin{
+    margin-bottom: 20px;
+}
+
+.info-cus-check__dieukhoan input{
+    height: 16px;
+    width: 16px;
+    margin-right: 4px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.info-cus-check__dieukhoan a{
+    text-decoration: none;
+    color: #288ad6;
+}
+
+.info-cus-check__dieukhoan{
+    margin-bottom: 15px;
+}
+
+.info-cus-footer__dathang button{
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(180deg,#f79429,#f7712e);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    height: 50px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.info-custom-footer p{
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    margin: 10px 0 25px 0;
+}
+
+.info-custom-footer{
+    padding-bottom: 6px;
+}

@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #F3F3F3;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Loại bỏ cuộn ngang */
+}
+/*-------------------header top---------------------*/
+
+.header .header-top {
+    height: 48px;
+    text-align: center;
+    background-color: #FFC602;
+}
+.header .header-between {
+    height: 50px;
+    background-color: #FFD400;
+}
+.header .header-between .iconlogo img{
+    margin-left: 70px;
+}
+.header .header-between {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box {
+    margin-left: 7px;
+    display: flex;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    width: 315px; 
+    position: relative; 
+}
+.search-input {
+    border: none;
+    outline: none;
+    width: 100%; 
+}
+.header-between .lemon {
+    background-color: rgba(255, 172, 10, .6);
+    padding-left: 9px;
+    padding-top: 3px;
+    width: 95px;    
+    border-radius: 6px;
+    margin-left: 10px;
+}
+.header-between .lemon1 {
+    background-color: rgba(255, 172, 10, .6);
+    margin-left: 10px;
+    padding: 11px;
+    border-radius: 6px ;
+}
+.header-between .lemon2 {
+    width: 100px;
+    padding-left: 11px;
+    padding-top: 5px;
+    padding-right: 5px;
+    border-right: 0.5px solid #e9f2ffb9;
+}
+.header-between .lemon3 {
+    line-height: 40px;
+    padding-left: 11px;
+    padding-right: 5px;
+    border-right: 0.5px solid #e9f2ffb9;
+}
+.header-between .lemon4 {
+    line-height: 40px;
+    padding-left: 11px;
+}
+.header-menu{
+    display: flex;
+}
+
+#menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 0 16px;
+}
+/*---------------CONTENT----------------------------*/
+/*---------------------------SLIDE---------------------------*/
+#contention {
+    display: flex;
+}
+
+#container{
+    width: 100%;
+    max-width: 1210px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 40PX;
+}
+.imgleft{
+    position: fixed;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Đảm bảo nó nổi lên trên các thành phần khác */
+    margin-left: 60px;
+}
+
+.imgright{
+    position: fixed;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000; /* Đảm bảo nó nổi lên trên các thành phần khác */
+    margin-right: 60px;
+}
+#container #contention .content .yone {
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+#container #contention .content .yone .second {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa ảnh và chữ */
+    width: 285px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin-left: 6px;
+}
+
+#container #contention .content .yone .second-1 {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa ảnh và chữ */
+    width: 285px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin-left: 20px;
+}
+#container #contention .content .yone .second-2 {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa ảnh và chữ */
+    width: 285px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin-left: 20px;
+}
+#container #contention .content .yone .second-3 {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa ảnh và chữ */
+    width: 285px;
+    height: 100px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    margin: 0 10px; /* Khoảng cách giữa các phần tử */
+    flex: 1 1 calc(20% - 10px); /* Chiếm 33% chiều rộng container, trừ khoảng cách */
+    margin-left: 20px;
+}
+.content {
+    width: 100%;
+    max-width: 1210px;
+    margin: auto;
+}
+
+.content .carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;    
+    width: 100%;
+}
+.content .carousel img {
+    height: 181px;
+    max-width: 595px;
+    width: calc(100% - 40px);
+    border-radius: 15px;
+    transition: transform 0.4s ease-in-out; 
+    transform-style: preserve-3d; 
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.content .carousel img:hover {
+    transform: translateY(-5px) scale(1.05); 
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); 
+}
+.content .imgcontent {
+    margin-top: 25px;
+    max-width: 100%;
+}
+/*-----------------------------------MuaHang----------------------------*/
+#container #contention .muahang {
+    margin-top: 25px;
+    background-color: #b32020;
+    border-radius: 18px;
+    overflow: hidden; /*ẩn nội dung khi vượt quá khu vực chứa*/
+    overflow-x: auto; /* Tạo thanh trượt ngang khi nội dung vượt quá kích thước của container */
+    scroll-behavior: smooth; /* Tạo hiệu ứng trượt mượt mà */
+    -webkit-overflow-scrolling: touch; /* Cải thiện trải nghiệm cuộn trên iOS */
+}
+#container #contention .muahang .muahang-1 {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+#container #contention .muahang .muahang-1 .muahang1 {
+    flex: 0 0 auto; /* Không co giãn mục con */
+    width: 300px; /* Độ rộng của mỗi mục */
+    scroll-snap-align: start; /* Căn mỗi slide vào điểm bắt đầu của container */
+    margin-right: 10px; /* Khoảng cách giữa các mục */
+    width: 225px;
+    height: 435px;
+    background-color: #FFFFFF;
+    border: 6px solid rgb(235 96 96);
+    margin-left: 10px;
+}
+
+#container #contention .muahang .muahang-1 .muahang1 img{
+    height: 205px;
+    width: 205px;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease; /* Thời gian và hiệu ứng chuyển đổi */
+}
+
+#container #contention .muahang .muahang-1 .muahang1 img:hover{
+    transform: translateY(-10px); /* Di chuyển ảnh lên trên 10px khi di chuột vào */
+}
+
+#container #contention .muahang .muahang-1 .muahang1 .relex, .relex1 {
+    display: flex;
+    margin-left: 12px;
+    margin-top: 10px;
+    align-items: center;
+}
+#container #contention .muahang .muahang-1 .muahang1 .relex .relex1{
+    background-color: rgb(252, 247, 219);
+    border-radius: 8px;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #cb2e2e;
+}
+
+#container #contention .muahang .muahang-1 .muahang1 .relex a,
+#container #contention .muahang .muahang-1 .muahang2 .relex-1 a{
+    font-size: 16px;
+}
+
+#container #contention .muahang .muahang-1 .muahang1 .first {
+    background-color: #ece9e9;
+    color: #472828;
+    font-size: 12px;
+    padding: 3px;
+    width: 70px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 7px;
+    margin-top: 10px;
+}
+
+#container #contention .muahang .muahang-1 .muahang2 {
+    flex: 0 0 auto; /* Không co giãn mục con */
+    width: 300px; /* Độ rộng của mỗi mục */
+    scroll-snap-align: start; /* Căn mỗi slide vào điểm bắt đầu của container */
+    margin-right: 10px; /* Khoảng cách giữa các mục */
+    width: 225px;
+    height: 435px;
+    background-color: #FFFFFF;
+    border: 6px solid rgb(235 96 96);
+    margin-left: 20px;
+    margin-left: 10px;
+    flex-shrink: 0;
+}
+
+#container #contention .muahang .muahang-1 .muahang2 img{
+    height: 205px;
+    width: 205px;
+    margin: 0 auto;
+    display: block;
+    transition: transform 0.3s ease; /* Thời gian và hiệu ứng chuyển đổi */
+}
+
+#container #contention .muahang .muahang-1 .muahang2 img:hover{
+    transform: translateY(-10px); /* Di chuyển ảnh lên trên 10px khi di chuột vào */
+}
+
+#container #contention .muahang .muahang-1 .muahang2 .relex-1 {
+    display: flex;
+    margin-left: 12px;
+    margin-top: 10px;
+}
+#container #contention .muahang .muahang-1 .muahang2 .relex-1 .relex2{
+    background-color: rgb(252, 247, 219);
+    border-radius: 8px;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #cb2e2e;
+    padding: 4px 8px;
+}
+#container #contention .muahang .muahang-1 .muahang2 .first1 {
+    background-color: #ece9e9;
+    color: #472828;
+    font-size: 12px;
+    padding: 3px;
+    width: 70px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 7px;
+    margin-top: 10px;
+    text-align: center;
+}
+#container #contention .muahang .button1{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container #contention .muahang .button1 button {
+    padding: 16px 91px;
+    background-color: #f7f1d2;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+#container #contention .muahang .button1 button:hover {
+    background-color: #fffbee; 
+}
+/* Phần hiển thị thêm sản phẩm */
+.muahang .muahang-2 {
+    display: none; /* Ẩn phần sản phẩm thêm ban đầu */
+}
+/*-------------------------container-bottom--------------------------*/
+#container .container-bottom {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+}
+
+#container .container-bottom h1{
+    font-size: 22px;
+    color: #3b3a3a;
+    margin-bottom: 40px;
+}
+
+#container .container-bottom-img{
+    display: flex;
+}
+
+.container-bottom-img .container-bottom-1{
+    padding: 6px;
+}
+.container-bottom-img .container-bottom-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/*--------------------------footer------------------------*/
+.main .footer {
+    padding-top: 4px;
+    margin-top: 35;
+    background-color: #FFFFFF;  
+    color: #3b3b3b;
+    height: 200px;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1210px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 4px;
+}
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #2b2a27;
+}
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+.footer-section ul li a {
+    color: #3b3b3b;
+    text-decoration: none;
+}
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+.social-icons a {
+    color: #3b3b3b;
+    font-size: 18px;
+    text-decoration: none;
+}
+.social-icons a:hover {
+    color: #2b2a27;
+}
+.footer-section p {
+    margin: 5px 0;
+}
+

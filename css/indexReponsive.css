@@ -1,0 +1,573 @@
+/* ---------------Cho iPad---------------- */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* --------------------header------------- */
+    .header-top img {
+        max-width: 100%;
+    }
+
+    .header .header-between {
+        flex-wrap: wrap;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .header .header-between .iconlogo img {
+        margin-left: 0;
+    }
+
+    .search-box {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .header-between .lemon,
+    .header-between .lemon1,
+    .header-between .lemon2,
+    .header-between .lemon3,
+    .header-between .lemon4 {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        max-width: 92px;
+        margin: 5px;
+        padding: 10px 5px;
+        white-space: nowrap;
+        /* Ngăn không cho text quá dài xuống dòng */
+        overflow: hidden;
+        /* Ẩn phần vượt quá phạm vi */
+        text-overflow: ellipsis;
+    }
+
+    .header .content-1 img {
+        height: auto;
+        width: 100%;
+    }
+
+    /* -------------------------contention---------------------- */
+    .content .yone .second,
+    .content .yone .second-1,
+    .content .yone .second-2,
+    .content .yone .second-3 {
+        flex: 1 0 calc(30% - 20px);
+        margin-left: 0;
+    }
+
+    .muahang .muahang-1 .muahang1,
+    .muahang .muahang-1 .muahang2 {
+        flex: 1 0 calc(20% - 20px);
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .imgleft,
+    .imgright {
+        display: none;
+    }
+
+    /* ----------------caurse ---------*/
+    .carousel img {
+        height: 150px;
+        width: calc(100% - 10px);
+        max-width: 90%;
+        /* Sử dụng phần trăm thay vì cố định chiều rộng */
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    /* ------------yone------------- */
+    #container #contention .content .yone .second,
+    #container #contention .content .yone .second-1,
+    #container #contention .content .yone .second-2,
+    #container #contention .content .yone .second-3 {
+        flex: 1 1 calc(15% - 10px);
+        /* Chiếm 50% chiều rộng container trên màn hình iPad */
+        margin: 10px;
+        /* Thêm margin để tạo khoảng cách giữa các hàng */
+    }
+
+    /* ----------------imgcontent---------- */
+    .content .imgcontent img {
+        margin: 0 10px;
+        max-width: 100%;
+        /* Đảm bảo hình ảnh không vượt quá chiều rộng container trên màn hình nhỏ hơn */
+    }
+
+    /* --------------Mua hàng-------- */
+    /* Điều chỉnh lại các phần tử cho tablet và màn hình lớn hơn */
+
+    .hidden {
+        display: none;
+    }
+
+    #container #contention .muahang .muahang-1 {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .muahang-img {
+        max-width: 100%;
+    }
+
+    /* --------------container-bootom-------- */
+    .container-bottom-img .container-bottom-1 img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+    }
+
+    /* -----------footer--------------- */
+    .footer-container {
+        display: grid;
+        margin-left: 100px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .footer-section {
+        min-width: auto;
+    }
+
+    .footer-section:nth-child(4),
+    .footer-section:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .footer-section:nth-child(4) {
+        grid-row: 2;
+    }
+
+    .footer-section:nth-child(5) {
+        grid-row: 2;
+        grid-column: 2 / span 2;
+    }
+
+    .footer-section h4 {
+        font-size: 14px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-section ul li a {
+        font-size: 12px;
+    }
+
+    .footer-section p {
+        font-size: 12px;
+        margin: 4px 0;
+    }
+
+    .social-icons a {
+        font-size: 14px;
+    }
+
+    /* -------------------------------Đặt hàng ------------------------- */
+    .content-img-anh {
+        width: 50%;
+    }
+    .content-phone1{
+        font-size: 16px;
+    }
+    .content-Phone img{
+        display: none;
+    }
+    .content-phone2 i{
+        display: none;
+    }
+    .content-phone3 a, .content-phone4 a, .content-phone4 i{
+        font-size: 12px;
+    }
+    #tbody{
+        padding: 0 10px;
+    }
+    .content-img{
+        font-size: 13px;
+        padding-bottom: 40px;
+    }
+    .info-khuyenmai h3 {
+        font-size: 20px;
+    }
+
+}
+
+
+/* -----------------cho mobile----------------------------------------------------- */
+@media (max-width: 767px) {
+
+    .imgleft,
+    .imgright {
+        display: none;
+    }
+
+    .content-1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header-top img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* --------------header---------------- */
+    .header-between-1 .search-box {
+        width: 240px;
+        padding: 7px;
+        font-size: 13px;
+        height: 30px;
+
+    }
+
+    .header .header-top {
+        height: 12px;
+    }
+
+    .header .header-between .iconlogo img {
+        margin-left: 9px;
+        height: 31px;
+    }
+
+    .header .header-between {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #menu-icon i{
+        margin-left: 10px;
+        padding: 0;
+    }
+
+    .header-menu {
+        display: none;
+        flex-direction: column-reverse;
+        width: 200px;
+        position: absolute;
+        top: 62px;
+        right: 0;
+        background-color: #FFD400;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+        border-radius: 0 0 8px 10px;
+    }
+
+    #menu-icon {
+        display: block;
+    }
+
+    .header-between .lemon {
+        width: 100%;
+        margin: 10px 0 1px 10px;
+    }
+
+    .header-between .lemon1 {
+        margin-bottom: 5px;
+    }
+
+    .header-between .lemon,
+    .header-between .lemon1 {
+        background-color: #FFD400;
+        line-height: 28px;
+        padding: 0;
+
+    }
+
+    .header-between .lemon2 {
+        width: 100%;
+    }
+
+    .header-between .lemon4 {
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    .header-menu .lemon,
+    .header-menu .lemon1,
+    .header-menu .lemon2,
+    .header-menu .lemon3,
+    .header-menu .lemon4 {
+        padding-top: 5px;
+        font-size: 16px;
+        transition: transform 0.3s ease;
+    }
+
+    .header-menu .lemon:hover,
+    .header-menu .lemon1:hover,
+    .header-menu .lemon2:hover,
+    .header-menu .lemon3:hover,
+    .header-menu .lemon4:hover {
+        transform: translateY(-4px);
+        /* Di chuyển lên trên 5px khi hover */
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        /* Đổ bóng */
+    }
+
+    /* -------------carouse----------- */
+    .content .carousel img {
+        transform-style: flat;
+        max-width: 100%;
+        height: 80px;
+    }
+
+    /* -------------------yone----------------- */
+    #container #contention .content .yone {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    #container #contention .content .yone .second-3,
+    #container #contention .content .yone .second-1,
+    #container #contention .content .yone .second-2,
+    #container #contention .content .yone .second
+    {
+        max-width: 100%;
+        justify-content: flex-start;
+        height: auto;
+        font-size: 14px;
+    }
+
+    #container #contention .content .yone .second img,
+    #container #contention .content .yone .second-1 img,
+    #container #contention .content .yone .second-2 img,
+    #container #contention .content .yone .second-3 img{
+        height: 50px;
+        width: 50px;
+    }
+
+    /* imgcontent------------------------- */
+    .imgcontent img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ------------------Mua Hang------- */
+    #container #contention .muahang .muahang-1 {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #container #contention .muahang .muahang-1 {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .muahang-img {
+        max-width: 100%;
+    }
+
+    #container #contention .muahang .muahang-1 .muahang1 img,
+    #container #contention .muahang .muahang-1 .muahang2 img {
+        height: 100px;
+        width: 100px;
+    }
+    #container #contention .muahang .muahang-1 .muahang1,
+    #container #contention .muahang .muahang-1 .muahang2 {
+        width: 145px;
+        height: 267px;
+        margin-left: 0px;
+    }
+
+    #container #contention .muahang .muahang-1 .muahang1 .relex .relex1{
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    #container #contention .muahang .muahang-1 .muahang1 .content-muahang,
+    #container #contention .muahang .muahang-1 .muahang2 .content-muahang{
+        display: block;
+        font-size: 12px;
+        text-align: start;
+        margin-right: 10px;
+    }
+    #container #contention .muahang .muahang-1 .muahang1 .relex a,
+    #container #contention .muahang .muahang-1 .muahang2 .relex-1 a{
+        font-size: 12px;
+    }
+    #container #contention .muahang .muahang-1 {
+        margin-left: 25px;
+    }
+    #container .container-bottom {
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    #container .container-bottom h1{
+        font-size: 18px;
+        margin-bottom: 18px;
+    }
+    #container{
+        padding-bottom: 30px;
+    }
+
+    /* -----------footer----------- */
+    .footer-container {
+        display: grid;
+        margin-left: 8px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding-bottom: 20px;
+    }
+
+    .footer-section {
+        min-width: auto;
+    }
+
+    .footer-section:nth-child(4),
+    .footer-section:nth-child(5) {
+        grid-column: span 1;
+    }
+
+    .footer-section:nth-child(4) {
+        grid-row: 2;
+    }
+
+    .footer-section:nth-child(5) {
+        grid-row: 2;
+        grid-column: 2 / span 2;
+    }
+
+    .footer-section h4 {
+        font-size: 12px;
+    }
+
+    .footer-section ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-section ul li a {
+        font-size: 11px;
+    }
+
+    .footer-section p {
+        font-size: 12px;
+        margin: 4px 0;
+    }
+
+
+
+    /* ---------GIỎ HÀNG ----------------------------------- */
+    .info-phone-name {
+        font-size: 13px;
+        width: 54%;
+    }
+    .info-cus-image {
+        margin: 31px 5px 240px 0px;
+    }
+    .info-cus-image img {
+        width: 50px;
+        margin: auto;
+    }
+    .info-content-phone .phone-money {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .info-ct-giamgia {
+        margin: 5px 0 5px 63px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .content-chuyentrang a {
+        font-size: 13px;
+        font-weight: bold;
+    }
+    .content-chuyentrang p {
+        float: right;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+    .content-chuyentrang p {
+    float: right;
+    font-size: 15px;
+    }
+    .info-content-phone strong {
+        font-size: 12px;
+    }
+    .info-content-phone .khuyenmai1-1, .khuyenmai1-1 input {
+        font-size: 12px;
+    }
+    .content-dot p ,.info-content-thugon{
+        font-size: 11px;
+    }
+    .info-content-tamtinh {
+        font-size: 12px;
+    }
+    .info-customer-address{
+        font-size: 12px;
+    }
+    .info-address__nhanhang {
+        font-size: 12px;
+    }
+
+    .info-customer-name input, .info-cusCK-name input{
+        max-width: 100%;
+        margin: 4px 10px 4px 0;
+    }
+    .info-customer-textbox {
+        display: block;
+    }
+
+
+    /* -------------------đặt hàng------------------------------------------------- */
+    .content-Phone img{
+        display: none;
+    }
+    .content-phone2 i{
+        display: none;
+    }
+    .content-phone1{
+        font-size: 14px;
+    }
+    #tbody{
+        padding: 0 13px;
+        max-width: 100%;
+    }
+    .content-phone3 a, .content-phone4 a, .content-phone4 i{
+        font-size: 11px;
+    }
+    .slick-slider-img img{
+        width: 100%;
+        padding-right: 15px;
+    }
+    .content-phone-cs, .content-phone-bt{
+        display: none;
+    }
+    .content-img-anh{
+        width: 350px;
+    }
+    .content-img a{
+        display: block;
+        margin-top: 0;
+        font-size: 11px;
+    }
+    .content-img{
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .content-info{
+        width: 400px;
+        margin-left: 0px;
+    }
+    .info-khuyenmai h3{
+        font-size: 20px;
+    }
+    .info-icon-button span{
+        display: flex;
+    }
+    .info-icon-button{
+        margin-top: 15px;
+    }
+    .info-address1, .info-address2{
+        display: none;
+    }
+    .add-to-card-layout{
+        width: 333px;
+    }
+}

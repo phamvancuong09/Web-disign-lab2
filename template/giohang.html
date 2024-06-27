@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="../css/giohang.css">
+    <link rel="stylesheet" href="../css/indexReponsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="main">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-top">
+                <img src="../img/ảnh 1.webp" height="44px">
+            </div>
+            <div class="header-between">
+                <div class="iconlogo">
+                    <img src="../img/logo-the-gioi-di-dong.jpg" height="40px">
+                </div>
+
+                <div class="header-between-1">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" class="search-input" placeholder="Bạn tìm gì....">
+                    </div>
+                </div>
+                <div id="menu-icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="header-menu">
+                    <div class="lemon">
+                        <a href="#" style="text-decoration: none;color: #000; ">Tài khoản & Đơn hàng </a>
+                    </div>
+                    <div class="lemon1">
+                        <a href="../template/giohang.html" style="text-decoration: none;color: #000;"><i
+                                class="fas fa-shopping-cart"></i> Giỏ
+                            hàng</a>
+                    </div>
+                    <div class="lemon2">
+                        <a href="" style="text-decoration: none;color: #000;"> 24h Công Nghệ</a>
+                    </div>
+                    <div class="lemon3">
+                        <a href="" style="text-decoration: none;color: #000;">Hỏi Đáp</a>
+                    </div>
+                    <div class="lemon4">
+                        <a href="" style="text-decoration: none;color: #000;">Game App</a>
+                    </div>
+                </div>
+            </div>
+            <div class="content-1">
+                <img src="../img/anh2.webp" height="450px">
+            </div>
+        </div>
+
+        <!-- ------------------------- body đặt hàng------------------------------------- -->
+        <div id="tbody">
+            <div class="content-chuyentrang">
+                <a href="../index.html"><i class="fa fa-chevron-left" aria-hidden="true"></i>Mua thêm sản phẩm khác</a>
+                <p>Giỏ hàng của bạn</p>
+            </div>
+            <div class="content-infomation-customer">
+                <div class="info-custom-img">
+                    <div class="info-cus-image">
+                        <a href="../template/datHang.html">
+                            <img data-v-422a06b3=""
+                                data-src="https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-grey-thumb-200x200.jpg"
+                                src="https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-grey-thumb-200x200.jpg"
+                                alt="Điện thoại Samsung Galaxy S24 Ultra 5G 12GB/256GB" loading="lazy"
+                                class=" ls-is-cached lazyloaded">
+                        </a>
+                        <button>
+                            <span><i class="fa fa-times-circle" aria-hidden="true"></i>Xóa</span>
+                        </button>
+                    </div>
+                    <div class="info-content-phone">
+                        <span class="info-phone-name"><a href="../template/datHang.html">Điện thoại Samsung Galaxy S24 Ultra 5G
+                                12GB/256GB</a></span>
+                        <span class="phone-money">32.990.000<i class="fa-solid fa-dong-sign"></i></span> <br>
+                        <strong>Chọn 1 trong 2 khuyến mãi</strong><br>
+                        <span class="khuyenmai1-1"><input class="khuyenmai1" type="radio" name="khuyenmai">Giảm giá
+                            4,000,000đ</span> <br>
+                        <span class="khuyenmai1-1"><input class="khuyenmai1" type="radio" name="khuyenmai">Tặng thêm 12
+                            tháng bảo hành chính hãng (Tổng cộng 24
+                            tháng) </span> <br>
+                        <div class="content-dot">
+                            <p><i class="fa fa-circle" aria-hidden="true"></i>Thu cũ Đổi mới: Giảm đến 1 triệu (Không
+                                kèm ưu đãi qua cổng thanh toán, mua kèm) <a href="">Xem chi tiết</a></p>
+                            <p><i class="fa fa-circle" aria-hidden="true"></i>Cơ hội trúng 10 xe máy Yamaha Sirius mỗi
+                                tháng, tổng giải thưởng lên đến 390 Triệu <a href="">Xem chi tiết</a></p>
+                            <p><i class="fa fa-circle" aria-hidden="true"></i>Trả góp 0% thẻ tín dụng qua Quà tặng
+                                Galaxy. <a href="">Xem chi tiết tại đây</a></p>
+                        </div>
+                        <p class="info-content-thugon" onclick="toggleContent()">Thu gọn <i class="fa fa-caret-up" aria-hidden="true"></i></p>
+                        <p class="info-ct-giamgia">Giảm 4.000.000<i class="fa-solid fa-dong-sign"></i> còn 28.990.000<i
+                                class="fa-solid fa-dong-sign"></i></p>
+                        <div class="info-cotent-color-sl">
+                            <div class="info-ct-color">
+                                <a href="">Màu: xám<i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="info-ct-sl">
+                                <button><i class="fa-solid fa-minus" style="color: #abaaaa;"></i></button>
+                                <input type="text" id="soluong" value="1">
+                                <button><i class="fa-sharp fa-solid fa-plus" style="color: #0d00ff;"></i></button>
+                            </div>
+                        </div>
+                        <div class="info-content-tamtinh">
+                            <span>Tạm tính (1 sản phẩm):</span>
+                            <span class="info-content-tamtinh__money">28.990.000<i
+                                    class="fa-solid fa-dong-sign"></i></span>
+                        </div>
+                        <hr>
+                        <div class="info-customer-address">
+                            <p>THÔNG TIN KHÁCH HÀNG:</p>
+                            <span class="info-gioitinh"><input type="radio" name="gioitinh" id="">Anh</span>
+                            <span class="info-gioitinh"><input type="radio" name="gioitinh" id="">Chị</span>
+                            <div class="info-customer-textbox">
+                                <div class="info-customer-name">
+                                    <input type="text" placeholder="Họ và tên">
+                                </div>
+                                <div class="info-customer-name">
+                                    <input type="text" placeholder="Số điện thoại">
+                                </div>
+                            </div>
+                            <p>CHỌN CÁCH THỨC NHẬN HÀNG</p>
+                            <span class="info-address__nhanhang"><input type="radio" name="nhanhang" id="giaotannoi" onclick="toggleAddress()">Giao tận
+                                nơi</span>
+                            <span class="info-address__nhanhang"><input type="radio" name="nhanhang" id="sieuthi" onclick="toggleAddress()">Nhận tại siêu
+                                thị</span>
+                            <div class="info-cus-address">
+                                <div class="cus-address__cty" id="cus-address-cty">
+                                    <p>Chọn địa chỉ để biết thời gian nhận hàng và phí vận chuyển (nếu có)</p>
+                                    <div class="cus-address">
+                                        <div class="address-cus1">
+                                            <button>
+                                                <span>Hồ Chí Minh <i class="fa fa-caret-down"
+                                                        aria-hidden="true"></i></span>
+                                                </button>
+                                            <button>
+                                                <span>Chọn Quận / Huyện<i class="fa fa-caret-down"
+                                                        aria-hidden="true"></i></span>
+                                            </button>
+                                        </div>
+                                        <div class="address-cus1">
+                                            <button>
+                                                <span>Chọn Phường / Xã <i class="fa fa-caret-down"
+                                                        aria-hidden="true"></i></span>
+                                            </button>
+                                            <input type="text" value="" placeholder="số nhà, tên đường">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-yeucau">
+                                    <input type="text" placeholder="Yêu cầu khác (Không bắt buộc)">
+                                </div>
+                                <div class="info-custom-checkbox">
+                                    <div class="call-phone__1">
+                                        <input type="checkbox" name="nhanhang" id="call-phone" onclick="TogglePhone()">Gọi người khác nhận hàng (nếu có)
+                                    </div>
+                                    <div class="info-custom-KH1" id="info-customKH1">
+                                        <span class="custom-KH-gioitinh"><input type="radio" name="gioitinh" id="">Anh</span>
+                                        <span class="custom-KH-gioitinh"><input type="radio" name="gioitinh" id="">Chị</span>
+                                        <div class="info-customer-textbox">
+                                            <div class="info-cusCK-name">
+                                                <input type="text" placeholder="Họ và tên">
+                                            </div>
+                                            <div class="info-cusCK-name">
+                                                <input type="text" placeholder="Số điện thoại">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <input type="checkbox" name="danhba" id="Cdanhba">Chuyển danh bạ, dữ liệu qua máy mới <br>
+                                    <input type="checkbox" name="hoadon" id="Xhoadon" onclick="ToggleHoadon()">Xuất hóa đơn công ty
+                                    <div class="info-hoadon-cus" id="info-hoadon-cus">
+                                        <div class="info-hoadon-cus1">
+                                            <input type="text" name="nameCTY" id="" placeholder="Tên công ty"> 
+                                        </div>
+                                        <div class="info-hoadon-cus1">
+                                            <input type="text" name="addressCTY" id="" placeholder="Địa chỉ công ty"> 
+                                        </div>
+                                        <div class="info-hoadon-cus1">
+                                            <input type="text" name="MaSoThue" id="" placeholder="Mã số thuế">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="info-custom-footer">
+                                        <div class="info-custom-maGiamGia">
+                                            <span class="if-cus-giamgia">
+                                                <i class="fa fa-credit-card-alt" aria-hidden="true"></i>Sử dụng mã giảm
+                                                giá<i class="fa-solid fa-angle-up"></i>
+                                            </span>
+                                            <br>
+                                            <div class="info-input-magiamgia">
+                                                <input type="text" placeholder="Nhập mã giảm giá hoặc phiếu mua hàng">
+                                                <button>Áp dụng</button>
+                                            </div>
+                                        </div>
+                                        <div class="info-cus-price">
+                                            <strong>Tổng tiền:</strong>
+                                            <strong class="price1">28.990.000<i class="fa-solid fa-dong-sign"></i></strong>
+                                        </div>
+                                        <div class="info-cus-poin">
+                                            <span>Điểm tích lũy Qùa Tặng VIP:</span>
+                                            <span class="poin1">57.980 điểm</span>
+                                        </div>
+                                        <div class="info-cus-check__dieukhoan">
+                                            <input type="checkbox" name="dieukhoan" id="">Tôi đồng ý với <a
+                                                href="">Chính sách xử lý dữ liệu cá nhân</a> của Thế Giới Di Động
+                                        </div>
+                                        <div class="info-cus-footer__dathang">
+                                            <button>ĐẶT HÀNG</button>
+                                        </div>
+                                        <P>Bạn có thể chọn hình thức thanh toán sau khi đặt hàng</P>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/giohang.js"></script>
+</body>
+
+</html>
